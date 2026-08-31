@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>개인정보처리방침 — handfirst</title>
+    <style>
+      :root {
+        --bg: #f7f7f8;
+        --card: #ffffff;
+        --fg: #23262b;
+        --muted: #7c828b;
+        --line: #e2e4e8;
+        --accent: #3b6ea8;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #131518;
+          --card: #1b1e22;
+          --fg: #e9eaec;
+          --muted: #8f959d;
+          --line: #2e3238;
+          --accent: #6fa3dd;
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        padding: 40px 20px 80px;
+        background: var(--bg);
+        color: var(--fg);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        line-height: 1.75;
+        -webkit-font-smoothing: antialiased;
+      }
+      main { max-width: 720px; margin: 0 auto; }
+      h1 { font-size: 28px; letter-spacing: -0.02em; margin: 0 0 6px; }
+      .sub { color: var(--muted); font-size: 14px; margin: 0 0 36px; }
+      .list { display: grid; gap: 12px; }
+      a.item {
+        display: block;
+        padding: 18px 20px;
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 10px;
+        text-decoration: none;
+        color: inherit;
+      }
+      a.item:hover { border-color: var(--accent); }
+      .name { font-size: 17px; font-weight: 600; letter-spacing: -0.01em; }
+      .plat {
+        display: inline-block;
+        margin-left: 8px;
+        padding: 1px 8px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        font-size: 11px;
+        font-weight: 500;
+        color: var(--muted);
+        vertical-align: 2px;
+      }
+      .desc { color: var(--muted); font-size: 14px; margin-top: 2px; }
+      footer {
+        margin-top: 48px;
+        padding-top: 20px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 13px;
+      }
+      a { color: var(--accent); }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>개인정보처리방침</h1>
+      <p class="sub">handfirst 가 만든 앱과 확장 프로그램의 개인정보처리방침입니다.</p>
+
+      <div class="list">
+        <a class="item" href="./recordmeet/">
+          <div class="name">RecordMeet<span class="plat">Chrome 확장</span></div>
+          <div class="desc">탭·화면 녹화. 수집·전송 없음, 파일은 사용자 PC 에만 저장</div>
+        </a>
+        <a class="item" href="./tigerdocu/">
+          <div class="name">TigerDocu<span class="plat">Android</span></div>
+          <div class="desc">개인 식별 정보 수집 없음, 배너 광고에 한해 AdMob 광고 식별자 사용</div>
+        </a>
+      </div>
+
+      <footer>
+        문의: <a href="mailto:handfirst2025@gmail.com">handfirst2025@gmail.com</a>
+      </footer>
+    </main>
+  </body>
+</html>

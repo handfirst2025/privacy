@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>개인정보처리방침 — RecordMeet</title>
+    <style>
+      :root {
+        --bg: #f7f9fc;
+        --fg: #23262b;
+        --muted: #7c828b;
+        --line: #dfe4ec;
+        --accent: #1a73e8;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #101418;
+          --fg: #e9eaec;
+          --muted: #8f959d;
+          --line: #2b3138;
+          --accent: #6fa3dd;
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        padding: 40px 20px 80px;
+        background: var(--bg);
+        color: var(--fg);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        line-height: 1.75;
+        -webkit-font-smoothing: antialiased;
+      }
+      main { max-width: 720px; margin: 0 auto; }
+      .back { display: inline-block; margin-bottom: 20px; font-size: 13px; text-decoration: none; }
+      h1 { font-size: 28px; letter-spacing: -0.02em; margin: 0 0 6px; }
+      .sub { color: var(--muted); font-size: 14px; margin: 0 0 36px; }
+      h2 {
+        font-size: 18px;
+        margin: 36px 0 10px;
+        padding-top: 20px;
+        border-top: 1px solid var(--line);
+      }
+      p, li { font-size: 15px; }
+      ul { padding-left: 20px; }
+      .highlight {
+        background: color-mix(in srgb, var(--accent) 12%, transparent);
+        border-left: 3px solid var(--accent);
+        padding: 14px 18px;
+        border-radius: 0 8px 8px 0;
+        margin: 20px 0;
+      }
+      .highlight p { margin: 0; font-weight: 600; }
+      .tablewrap { overflow-x: auto; }
+      table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 14px; }
+      th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+      th { color: var(--muted); font-weight: 600; white-space: nowrap; }
+      code {
+        font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+        font-size: 13px;
+        background: color-mix(in srgb, var(--fg) 8%, transparent);
+        padding: 1px 5px;
+        border-radius: 4px;
+      }
+      footer {
+        margin-top: 48px;
+        padding-top: 20px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 13px;
+      }
+      a { color: var(--accent); }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a class="back" href="../">← 전체 목록</a>
+
+      <h1>개인정보처리방침</h1>
+      <p class="sub">RecordMeet (Chrome 확장 프로그램) · 시행일 2026년 8월 31일</p>
+
+      <div class="highlight">
+        <p>RecordMeet 는 어떠한 데이터도 수집하거나 외부로 전송하지 않습니다.
+        녹화된 영상과 음성은 사용자의 컴퓨터에만 저장됩니다.</p>
+      </div>
+
+      <h2>1. 수집하는 개인정보</h2>
+      <p>없습니다.</p>
+      <p>
+        RecordMeet 는 개발자나 제3자에게 어떤 정보도 보내지 않습니다.
+        분석 도구(analytics), 추적 코드, 광고 SDK, 원격 서버 통신이
+        일절 포함되어 있지 않습니다. 계정이나 로그인 기능도 없습니다.
+      </p>
+
+      <h2>2. 녹화된 데이터의 처리</h2>
+      <ul>
+        <li>녹화는 사용자의 브라우저 안에서만 이루어집니다.</li>
+        <li>완성된 파일은 사용자 컴퓨터의 다운로드 폴더(<code>다운로드/RecordMeet/</code>)에 직접 저장됩니다.</li>
+        <li>녹화 파일은 어떤 서버에도 업로드되지 않습니다.</li>
+        <li>개발자는 사용자의 녹화 내용에 접근할 수 없습니다.</li>
+      </ul>
+
+      <h2>3. 무엇이 녹화되는지, 그리고 그 선택은 누가 하는지</h2>
+      <p>녹화 대상은 사용자가 녹화를 시작할 때마다 직접 고릅니다.</p>
+      <ul>
+        <li><strong>현재 탭</strong> — 사용자가 확장 아이콘을 누른 그 탭의 화면과 소리만 녹화합니다. 다른 탭은 녹화되지 않습니다.</li>
+        <li><strong>전체 화면</strong> — 크롬이 띄우는 화면 선택창에서 사용자가 직접 고른 대상과, 사용자가 "시스템 오디오도 공유"를 켠 경우의 시스템 소리를 녹화합니다.</li>
+      </ul>
+      <p>
+        전체 화면을 고르면 브라우저 밖의 화면까지 녹화될 수 있습니다.
+        다만 <strong>무엇을 공유할지는 전적으로 크롬의 화면 선택창에서 사용자가 정하며</strong>,
+        확장 프로그램이 대상을 임의로 고르거나 선택창 없이 화면을 가져올 수는 없습니다.
+        녹화 중에는 크롬이 자체 공유 표시줄을 띄워 공유 상태를 항상 알려 줍니다.
+      </p>
+      <p>
+        어느 경우든 녹화된 내용은 사용자의 컴퓨터를 벗어나지 않습니다.
+      </p>
+
+      <h2>4. 마이크 사용에 대하여</h2>
+      <p>
+        마이크는 사용자가 녹화 시작 버튼을 누른 뒤에만 활성화되며,
+        녹화를 중지하면 즉시 해제됩니다. 백그라운드에서 임의로 마이크를 켜지 않습니다.
+      </p>
+      <p>
+        마이크 권한을 거부해도 녹화 자체는 동작합니다.
+        이 경우 사용자 본인의 목소리만 파일에 포함되지 않습니다.
+      </p>
+
+      <h2>5. 권한을 사용하는 이유</h2>
+      <div class="tablewrap">
+        <table>
+          <thead>
+            <tr><th>권한</th><th>사용 목적</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>tabCapture</code></td>
+              <td>사용자가 선택한 탭의 화면과 소리를 녹화하기 위해 사용합니다.</td>
+            </tr>
+            <tr>
+              <td>화면 공유</td>
+              <td>전체 화면 녹화를 위해 크롬의 화면 선택창을 띄웁니다. 사용자가 선택창에서 직접 고른 대상만 넘어옵니다.</td>
+            </tr>
+            <tr>
+              <td>마이크 접근</td>
+              <td>사용자 본인의 목소리를 녹음에 포함하기 위해 사용합니다. 탭 소리만으로는 본인 음성이 녹음되지 않습니다.</td>
+            </tr>
+            <tr>
+              <td><code>offscreen</code></td>
+              <td>녹화 처리를 수행할 백그라운드 문서를 만들기 위해 사용합니다.</td>
+            </tr>
+            <tr>
+              <td><code>downloads</code></td>
+              <td>완성된 녹화 파일을 사용자 컴퓨터에 저장하기 위해 사용합니다.</td>
+            </tr>
+            <tr>
+              <td><code>storage</code></td>
+              <td>선택한 녹화 품질 등 설정을 기억하기 위해 사용합니다. 설정값만 저장하며 녹화 내용은 저장하지 않습니다.</td>
+            </tr>
+            <tr>
+              <td><code>activeTab</code></td>
+              <td>사용자가 확장 아이콘을 클릭한 그 탭 하나만 녹화 대상으로 삼기 위해 사용합니다.</td>
+            </tr>
+            <tr>
+              <td><code>scripting</code></td>
+              <td>탭 녹화가 시작될 때 해당 탭에만 "녹화 중" 배지를 띄우기 위해 사용합니다. 페이지 내용을 읽거나 바꾸지 않습니다.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>6. 기기에 저장되는 정보</h2>
+      <p>다음 정보가 사용자의 브라우저 안에만 저장됩니다. 외부로 전송되지 않습니다.</p>
+      <ul>
+        <li>선택한 녹화 대상·품질·저장 형식 등 설정값</li>
+        <li>현재 녹화 진행 상태</li>
+      </ul>
+      <p>확장 프로그램을 삭제하면 이 정보도 함께 삭제됩니다.</p>
+
+      <h2>7. 제3자 제공</h2>
+      <p>
+        개발자가 사용자 정보를 제3자에게 판매하거나 제공하는 일은 없습니다.
+        애초에 전송되는 정보 자체가 없습니다.
+      </p>
+
+      <h2>8. 아동의 개인정보</h2>
+      <p>
+        이 확장 프로그램은 만 13세 이상을 대상으로 합니다.
+        어떤 연령대의 사용자로부터도 개인정보를 수집하지 않습니다.
+      </p>
+
+      <h2>9. 방침의 변경</h2>
+      <p>
+        이 방침이 변경될 경우 이 페이지에 갱신된 내용과 시행일을 게시합니다.
+      </p>
+
+      <h2>10. 문의</h2>
+      <p>
+        개인정보처리방침에 관한 문의는 아래로 연락 주시기 바랍니다.<br />
+        <a href="mailto:handfirst2025@gmail.com">handfirst2025@gmail.com</a>
+      </p>
+
+      <footer>최종 수정일: 2026년 8월 31일</footer>
+    </main>
+  </body>
+</html>
