@@ -14,6 +14,7 @@ index.html                    허브 — 앱 목록
 recordmeet/index.html         RecordMeet       (Chrome 웹스토어)
 tigerdocu/index.html          TigerDocu        (Google Play)
 fmm-lead-capture/index.html   FMM Lead Capture (Chrome 웹스토어)
+snowpenguin/index.html        Snow Penguin     (Google Play)
 ```
 
 | 앱 | 제출용 URL |
@@ -21,6 +22,7 @@ fmm-lead-capture/index.html   FMM Lead Capture (Chrome 웹스토어)
 | RecordMeet | https://handfirst2025.github.io/privacy/recordmeet/ |
 | TigerDocu | https://handfirst2025.github.io/privacy/tigerdocu/ |
 | FMM Lead Capture | https://handfirst2025.github.io/privacy/fmm-lead-capture/ |
+| Snow Penguin | https://handfirst2025.github.io/privacy/snowpenguin/ |
 
 ## 앱 추가하기
 
