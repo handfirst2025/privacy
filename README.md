@@ -15,6 +15,7 @@ recordmeet/index.html         RecordMeet       (Chrome 웹스토어)
 tigerdocu/index.html          TigerDocu        (Google Play)
 fmm-lead-capture/index.html   FMM Lead Capture (Chrome 웹스토어)
 snowpenguin/index.html        Snow Penguin     (Google Play)
+jetjack/index.html            Jet Jack         (Google Play)
 ```
 
 | 앱 | 제출용 URL |
@@ -23,6 +24,7 @@ snowpenguin/index.html        Snow Penguin     (Google Play)
 | TigerDocu | https://handfirst2025.github.io/privacy/tigerdocu/ |
 | FMM Lead Capture | https://handfirst2025.github.io/privacy/fmm-lead-capture/ |
 | Snow Penguin | https://handfirst2025.github.io/privacy/snowpenguin/ |
+| Jet Jack | https://handfirst2025.github.io/privacy/jetjack/ |
 
 ## 앱 추가하기
 
