@@ -18,6 +18,7 @@ snowpenguin/index.html        Snow Penguin     (Google Play)
 jetjack/index.html            Jet Jack         (Google Play)
 musoemal/index.html           무쇠말            (Google Play)
 deepblue/index.html           DEEPBLUE         (Google Play)
+pizza/index.html               Pizza Rush       (Google Play)
 ```
 
 | 앱 | 제출용 URL |
@@ -29,6 +30,7 @@ deepblue/index.html           DEEPBLUE         (Google Play)
 | Jet Jack | https://handfirst2025.github.io/privacy/jetjack/ |
 | 무쇠말 | https://handfirst2025.github.io/privacy/musoemal/ |
 | DEEPBLUE | https://handfirst2025.github.io/privacy/deepblue/ |
+| Pizza Rush | https://handfirst2025.github.io/privacy/pizza/ |
 
 ## 앱 추가하기
 
