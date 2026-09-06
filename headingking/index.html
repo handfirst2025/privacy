@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>개인정보처리방침 — 헤딩왕</title>
+    <style>
+      :root {
+        --bg: #f2f7f3;
+        --fg: #17251c;
+        --muted: #66786c;
+        --line: #d6e3da;
+        --accent: #2f7d4f;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #101812;
+          --fg: #e6efe9;
+          --muted: #8fa596;
+          --line: #24352b;
+          --accent: #6ee7a0;
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        padding: 40px 20px 80px;
+        background: var(--bg);
+        color: var(--fg);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        line-height: 1.75;
+        -webkit-font-smoothing: antialiased;
+      }
+      main { max-width: 720px; margin: 0 auto; }
+      h1 { font-size: 28px; letter-spacing: -0.02em; margin: 0 0 6px; }
+      .sub { color: var(--muted); font-size: 14px; margin: 0 0 36px; }
+      h2 {
+        font-size: 18px;
+        margin: 36px 0 10px;
+        padding-top: 20px;
+        border-top: 1px solid var(--line);
+      }
+      p, li { font-size: 15px; }
+      ul { padding-left: 20px; }
+      .highlight {
+        background: color-mix(in srgb, var(--accent) 12%, transparent);
+        border-left: 3px solid var(--accent);
+        padding: 14px 18px;
+        border-radius: 0 8px 8px 0;
+        margin: 20px 0;
+      }
+      .highlight p { margin: 0; font-weight: 600; }
+      footer {
+        margin-top: 48px;
+        padding-top: 20px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 13px;
+      }
+      a { color: var(--accent); }
+      .back { display: inline-block; margin-bottom: 20px; font-size: 13px; text-decoration: none; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a class="back" href="../">← 전체 목록</a>
+
+      <h1>개인정보처리방침</h1>
+      <p class="sub">헤딩왕 (work.fastmax.headingking) · 시행일 2026년 9월 6일</p>
+
+      <div class="highlight">
+        <p>이 앱은 계정을 만들지 않고, 개인을 식별하는 정보를 수집하지 않습니다.
+        다만 온라인 대전은 그 성격상 게임 서버와 통신하므로, 대전 중에만 쓰이는
+        최소한의 기술 정보가 오갑니다. 아래에 그 전부를 적었습니다.</p>
+      </div>
+
+      <h2>1. 수집하지 않는 정보</h2>
+      <p>이 앱은 다음을 일절 수집하지 않습니다.</p>
+      <ul>
+        <li>이름, 이메일 주소, 전화번호 등 개인을 식별하는 정보</li>
+        <li>위치 정보</li>
+        <li>연락처, 사진, 파일 등 기기 안의 정보</li>
+        <li>광고 식별자(AAID), 기기 식별자</li>
+        <li>사용 기록, 분석(analytics) 데이터, 크래시 리포트</li>
+      </ul>
+      <p>회원가입이나 로그인이 없습니다. 이 앱은 이용자를 식별하지 않습니다.</p>
+
+      <h2>2. 온라인 대전에서 오가는 것</h2>
+      <p>메뉴에서 <strong>온라인 대전</strong>을 선택했을 때에만 게임 서버에 접속하며,
+      다음이 전송됩니다.</p>
+      <ul>
+        <li><strong>대전용 표시 이름</strong> — 앱이 무작위로 만든 이름(예: 플레이어4271)입니다.
+          이용자의 실명이나 계정과 무관하며 그 경기에서만 상대에게 보입니다.</li>
+        <li><strong>조작 입력과 경기 상태</strong> — 좌/우/점프/킥 버튼의 눌림 여부와
+          공·캐릭터의 위치입니다. 경기를 두 기기에서 같게 보이게 하는 데만 쓰입니다.</li>
+        <li><strong>IP 주소</strong> — 인터넷 통신에 기술적으로 필요합니다.
+          서버는 경기 중 응답을 되돌려 보내기 위해 이를 메모리에 두며,
+          접속이 끊기면 버립니다. 별도로 저장하거나 다른 정보와 결합하지 않습니다.</li>
+      </ul>
+      <p>이 정보들은 경기가 끝나면 서버에서 사라집니다. 경기 기록, 전적, 순위표를
+      보관하지 않습니다.</p>
+
+      <h2>3. 오프라인으로만 쓰기</h2>
+      <p>메뉴의 <strong>연습 경기</strong>는 기기 안에서만 동작합니다.
+      이 모드만 이용하면 어떤 데이터도 기기 밖으로 나가지 않습니다.</p>
+
+      <h2>4. 요구하는 권한</h2>
+      <p>인터넷 권한(<code>android.permission.INTERNET</code>) 하나만 선언합니다.
+      온라인 대전에 필요합니다. 카메라, 위치, 저장소, 연락처, 마이크에는 접근하지 않습니다.</p>
+
+      <h2>5. 제3자 서비스</h2>
+      <p>이 앱은 광고 네트워크, 분석 도구, 소셜 로그인, 결제 모듈 등
+      어떠한 제3자 SDK도 포함하지 않습니다.
+      통신 상대는 이 게임의 자체 서버뿐입니다.</p>
+
+      <h2>6. 데이터 보관</h2>
+      <p>서버는 경기 진행에 필요한 동안에만 위 정보를 메모리에 두고,
+      경기가 끝나거나 접속이 끊기면 폐기합니다. 데이터베이스에 저장하지 않습니다.</p>
+
+      <h2>7. 아동 개인정보</h2>
+      <p>이 앱은 개인을 식별하는 정보를 수집하지 않으므로,
+      만 13세 미만 아동을 포함한 모든 연령대의 이용자로부터 개인정보를 수집하지 않습니다.</p>
+
+      <h2>8. 방침 변경</h2>
+      <p>이 방침이 변경되면 이 페이지에 갱신된 내용과 시행일을 게시합니다.
+      광고나 통계 도구를 도입하게 되면 도입 전에 이 문서를 먼저 갱신합니다.</p>
+
+      <h2>9. 문의</h2>
+      <p><a href="mailto:handfirst2025@gmail.com">handfirst2025@gmail.com</a></p>
+
+      <footer>헤딩왕 · work.fastmax.headingking</footer>
+    </main>
+  </body>
+</html>
