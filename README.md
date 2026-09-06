@@ -17,6 +17,7 @@ fmm-lead-capture/index.html   FMM Lead Capture (Chrome 웹스토어)
 snowpenguin/index.html        Snow Penguin     (Google Play)
 jetjack/index.html            Jet Jack         (Google Play)
 musoemal/index.html           무쇠말            (Google Play)
+deepblue/index.html           DEEPBLUE         (Google Play)
 ```
 
 | 앱 | 제출용 URL |
@@ -27,6 +28,7 @@ musoemal/index.html           무쇠말            (Google Play)
 | Snow Penguin | https://handfirst2025.github.io/privacy/snowpenguin/ |
 | Jet Jack | https://handfirst2025.github.io/privacy/jetjack/ |
 | 무쇠말 | https://handfirst2025.github.io/privacy/musoemal/ |
+| DEEPBLUE | https://handfirst2025.github.io/privacy/deepblue/ |
 
 ## 앱 추가하기
 
