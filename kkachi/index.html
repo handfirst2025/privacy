@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>개인정보처리방침 — 까치</title>
+    <style>
+      :root {
+        --bg: #f3f8fa;
+        --fg: #10232b;
+        --muted: #5a6f78;
+        --line: #d6e5eb;
+        --accent: #1f6f8b;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0f1619;
+          --fg: #e3edf1;
+          --muted: #93a8b1;
+          --line: #22323a;
+          --accent: #7cc7de;
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        padding: 40px 20px 80px;
+        background: var(--bg);
+        color: var(--fg);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        line-height: 1.75;
+        -webkit-font-smoothing: antialiased;
+      }
+      main { max-width: 720px; margin: 0 auto; }
+      h1 { font-size: 28px; letter-spacing: -0.02em; margin: 0 0 6px; }
+      .sub { color: var(--muted); font-size: 14px; margin: 0 0 36px; }
+      h2 {
+        font-size: 18px;
+        margin: 36px 0 10px;
+        padding-top: 20px;
+        border-top: 1px solid var(--line);
+      }
+      p, li { font-size: 15px; }
+      ul { padding-left: 20px; }
+      .highlight {
+        background: color-mix(in srgb, var(--accent) 12%, transparent);
+        border-left: 3px solid var(--accent);
+        padding: 14px 18px;
+        border-radius: 0 8px 8px 0;
+        margin: 20px 0;
+      }
+      .highlight p { margin: 0; font-weight: 600; }
+      footer {
+        margin-top: 48px;
+        padding-top: 20px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 13px;
+      }
+      a { color: var(--accent); }
+      .back { display: inline-block; margin-bottom: 20px; font-size: 13px; text-decoration: none; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a class="back" href="../">← 전체 목록</a>
+
+      <h1>개인정보처리방침</h1>
+      <p class="sub">까치 (com.handfirst.kkachi) · 시행일 2026년 9월 11일</p>
+
+      <div class="highlight">
+        <p>까치는 초대받은 사람끼리 메시지·사진·파일을 주고받는 메신저입니다.
+        대화 내용과 첨부는 전달을 위해 운영자 서버에 저장되며, 광고·분석 도구는 쓰지 않습니다.</p>
+      </div>
+
+      <h2>1. 수집하는 정보</h2>
+      <ul>
+        <li><strong>계정 정보</strong> — 운영자가 만들어 준 계정의 표시 이름.
+          로그인은 운영자가 발급한 1회용 코드로 하며, 전화번호·이메일·비밀번호를 받지 않습니다.
+          로그인한 기기마다 인증 토큰이 발급되고, 서버에는 그 토큰의 해시값만 저장됩니다.</li>
+        <li><strong>메시지와 첨부</strong> — 사용자가 보낸 글, 사진, 파일(PDF·APK 등)과 보낸 시각.
+          사진은 보내기 전에 기기에서 크기를 줄이고 촬영 위치 등 사진 속 부가정보(EXIF)를 지웁니다.
+          파일 선택으로 보낸 파일은 원본 그대로 전송됩니다.</li>
+        <li><strong>링크 미리보기</strong> — 메시지에 인터넷 주소가 있으면 서버가 그 페이지의 제목·설명·대표 이미지 주소를 가져와 함께 저장합니다.</li>
+        <li><strong>읽음 정보</strong> — 대화방에서 마지막으로 읽은 메시지(안 읽은 수 "1" 표시에 사용).</li>
+        <li><strong>알림 토큰</strong> — 새 메시지 알림을 받기 위한 Firebase 클라우드 메시징 등록 토큰.</li>
+        <li><strong>차단·신고 기록</strong> — 사용자가 차단한 상대, 신고한 내용과 대상.</li>
+        <li><strong>서버 접속 기록</strong> — 접속한 IP 주소, 시각, 요청 경로(웹 서버 로그).</li>
+      </ul>
+      <p>연락처, 위치, 광고 식별자(AAID), 사용 통계, 오류 보고서는 수집하지 않습니다.</p>
+
+      <h2>2. 요청하는 권한</h2>
+      <ul>
+        <li><code>INTERNET</code> — 메시지를 주고받기 위해 필요합니다.</li>
+        <li><code>POST_NOTIFICATIONS</code> — 새 메시지 알림을 보여 주기 위해 요청합니다. 거부해도 앱은 동작합니다.</li>
+      </ul>
+      <p>사진은 안드로이드 시스템 사진 선택기로, 파일은 시스템 파일 선택기로 사용자가 고른 것만 앱에 전달됩니다.
+      카메라는 시스템 카메라 앱을 불러 찍은 사진만 받습니다. 앱이 저장공간·카메라·연락처 권한을 따로 요청하지 않습니다.</p>
+
+      <h2>3. 이용 목적</h2>
+      <ul>
+        <li>메시지와 첨부를 대화 상대에게 전달하고, 다시 볼 수 있도록 보관</li>
+        <li>새 메시지 알림</li>
+        <li>신고 처리와 부정 이용 방지</li>
+        <li>서비스 장애 확인과 복구</li>
+      </ul>
+
+      <h2>4. 저장 위치와 보안</h2>
+      <p>정보는 운영자가 관리하는 서버(Amazon Web Services 서울 리전)에 저장됩니다.
+      앱과 서버 사이의 모든 통신은 HTTPS(TLS)로 암호화됩니다.
+      첨부 파일은 로그인한 해당 대화방 참여자만 받을 수 있습니다.
+      다만 까치는 종단간 암호화를 제공하지 않으므로, 서버에 저장된 대화 내용은 운영자가 서비스 운영과 신고 처리를 위해 확인할 수 있습니다.</p>
+
+      <h2>5. 제3자 제공 및 처리 위탁</h2>
+      <p>새 메시지 알림을 전달하기 위해 <strong>Google Firebase 클라우드 메시징</strong>을 사용합니다.
+      이때 보낸 사람 이름, 대화방 이름, 메시지 미리보기(최대 500자)와 알림 토큰이 Google 서버를 거쳐 사용자 기기로 전달됩니다.
+      (<a href="https://firebase.google.com/support/privacy">Firebase 개인정보 보호</a>)</p>
+      <p>그 밖에 광고 네트워크, 분석 도구, 소셜 로그인, 결제 모듈 등 제3자 SDK는 포함하지 않으며, 수집한 정보를 판매하거나 제3자에게 제공하지 않습니다.</p>
+
+      <h2>6. 보관 기간과 삭제</h2>
+      <ul>
+        <li>계정 정보, 메시지, 첨부, 차단·신고 기록은 계정이 유지되는 동안 보관합니다.</li>
+        <li>로그아웃하면 그 기기의 알림 토큰은 서버에서 지워집니다.</li>
+        <li>서버 접속 기록은 14일이 지나면 자동으로 삭제됩니다.</li>
+        <li>계정 삭제나 데이터 삭제를 원하면 아래 이메일로 요청해 주세요.
+          확인 후 7일 안에 계정과 그 계정이 보낸 메시지·첨부·알림 토큰을 삭제합니다.
+          상대방 기기에 이미 받아 저장한 파일은 삭제되지 않을 수 있습니다.</li>
+      </ul>
+
+      <h2>7. 신고와 차단</h2>
+      <p>대화방 오른쪽 위 메뉴나 메시지를 길게 눌러 부적절한 내용과 사용자를 신고하고 차단할 수 있습니다.
+      신고는 운영자가 확인해 조치하며, 신고한 사실은 상대에게 알리지 않습니다.
+      차단한 사용자의 메시지와 알림은 더 이상 받지 않습니다.</p>
+
+      <h2>8. 아동 개인정보</h2>
+      <p>까치는 만 14세 미만 아동을 대상으로 하지 않으며, 알면서 아동의 정보를 수집하지 않습니다.</p>
+
+      <h2>9. 방침 변경</h2>
+      <p>이 방침이 바뀌면 이 페이지에 갱신된 내용과 시행일을 게시합니다.</p>
+
+      <h2>10. 문의</h2>
+      <p><a href="mailto:handfirst2025@gmail.com">handfirst2025@gmail.com</a></p>
+
+      <footer>까치 · com.handfirst.kkachi</footer>
+    </main>
+  </body>
+</html>
