@@ -33,6 +33,7 @@ kkachi/index.html             까치              (Google Play)
 | DEEPBLUE | https://handfirst2025.github.io/privacy/deepblue/ |
 | Pizza Rush | https://handfirst2025.github.io/privacy/pizza/ |
 | 까치 | https://handfirst2025.github.io/privacy/kkachi/ |
+| 돌팔매 | https://handfirst2025.github.io/privacy/dolpalmae/ |
 
 ## 앱 추가하기
 
