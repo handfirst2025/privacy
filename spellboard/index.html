@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>개인정보처리방침 — SpellBoard</title>
+    <style>
+      :root {
+        --bg: #f3f8fa;
+        --fg: #10232b;
+        --muted: #5a6f78;
+        --line: #d6e5eb;
+        --accent: #2f6b4f;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0f1619;
+          --fg: #e3edf1;
+          --muted: #93a8b1;
+          --line: #22323a;
+          --accent: #8fd4ac;
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        padding: 40px 20px 80px;
+        background: var(--bg);
+        color: var(--fg);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        line-height: 1.75;
+        -webkit-font-smoothing: antialiased;
+      }
+      main { max-width: 720px; margin: 0 auto; }
+      h1 { font-size: 28px; letter-spacing: -0.02em; margin: 0 0 6px; }
+      .sub { color: var(--muted); font-size: 14px; margin: 0 0 36px; }
+      h2 {
+        font-size: 18px;
+        margin: 36px 0 10px;
+        padding-top: 20px;
+        border-top: 1px solid var(--line);
+      }
+      p, li { font-size: 15px; }
+      ul { padding-left: 20px; }
+      .highlight {
+        background: color-mix(in srgb, var(--accent) 12%, transparent);
+        border-left: 3px solid var(--accent);
+        padding: 14px 18px;
+        border-radius: 0 8px 8px 0;
+        margin: 20px 0;
+      }
+      .highlight p { margin: 0; font-weight: 600; }
+      footer {
+        margin-top: 48px;
+        padding-top: 20px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 13px;
+      }
+      a { color: var(--accent); }
+      .back { display: inline-block; margin-bottom: 20px; font-size: 13px; text-decoration: none; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a class="back" href="../">← 전체 목록</a>
+
+      <h1>개인정보처리방침</h1>
+      <p class="sub">SpellBoard (com.handfirst.spellboard) · 개발자 SungMin Yun (handfirst) · 시행일 2026년 10월 7일</p>
+
+      <div class="highlight">
+        <p>SpellBoard 는 손으로 쓴 영어 단어의 철자를 채점해 주는 학습 앱입니다.
+        회원가입·로그인이 없고, 이름·연락처 같은 개인정보를 받지 않습니다.
+        손글씨는 기기 안에서만 인식되며 개발자 서버로 보내지 않습니다.</p>
+      </div>
+
+      <h2>1. 앱이 처리하는 정보</h2>
+      <ul>
+        <li><strong>손글씨 획</strong> — 칠판에 쓴 획(좌표와 시각)은 기기 안의 Google ML Kit 손글씨 인식기로만 처리되고,
+          채점이 끝나면 저장하지 않습니다. 개발자 서버나 다른 곳으로 전송하지 않습니다.</li>
+        <li><strong>반 코드</strong> — 선생님이 알려 준 6자리 코드를 입력하면, 그 코드로 단어 목록을 받기 위해
+          코드만 Little Forest 서버(littleforest.one)로 보냅니다. 코드는 학생 개인을 식별하지 않습니다.</li>
+        <li><strong>기기에만 저장되는 정보</strong> — 내려받은 단어장, 단어장별 최고 점수, 설정(효과음·펜 전용·문제 수)은
+          기기 안(앱 저장소)에만 저장되며 서버로 보내지 않습니다. 앱을 삭제하면 함께 지워집니다.</li>
+      </ul>
+      <p>이름, 이메일, 전화번호, 연락처, 위치, 사진, 광고 식별자(AAID)는 수집하지 않습니다.
+      학생의 풀이 결과나 점수도 서버로 보내지 않습니다.</p>
+
+      <h2>2. Google ML Kit 가 수집하는 정보</h2>
+      <p>손글씨 인식에 쓰는 <strong>Google ML Kit</strong> 은 기능 진단과 사용 통계를 위해 다음 정보를 Google 에 보냅니다
+        (<a href="https://developers.google.com/ml-kit/android-data-disclosure">Google ML Kit 데이터 공개</a>).</p>
+      <ul>
+        <li>기기 정보(제조사, 모델, OS 버전), 앱 패키지명과 버전</li>
+        <li>사용자나 기기를 식별하려는 목적이 아닌 설치별 식별자</li>
+        <li>성능 지표(처리 시간), 기능 설정(인식 언어), 이벤트 종류(모델 다운로드·인식), 오류 코드</li>
+      </ul>
+      <p>쓴 글씨 자체나 인식 결과는 이 정보에 포함되지 않습니다. ML Kit 은 이 정보를 HTTPS 로 암호화해 전송하며
+      제3자에게 넘기지 않습니다. 또한 처음 실행할 때 영어 손글씨 인식 모델(약 20MB)을 Google 서버에서 한 번 내려받습니다.</p>
+
+      <h2>3. 요청하는 권한</h2>
+      <ul>
+        <li><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code> — 단어장 받기와 인식 모델 다운로드에 필요합니다.</li>
+        <li><code>WAKE_LOCK</code>, <code>RECEIVE_BOOT_COMPLETED</code>, <code>FOREGROUND_SERVICE</code> — ML Kit 이 인식 모델을
+          백그라운드에서 내려받을 때 쓰는 구성요소(AndroidX WorkManager)가 포함한 권한입니다. 사용자에게 따로 묻는 권한은 없습니다.</li>
+      </ul>
+      <p>카메라, 마이크, 저장공간, 위치, 연락처 권한은 사용하지 않습니다.
+      단어 발음은 기기에 설치된 음성 합성(TTS) 엔진으로 재생합니다.</p>
+
+      <h2>4. 제3자 제공</h2>
+      <p>광고 네트워크, 분석 도구, 소셜 로그인, 결제 모듈을 넣지 않았습니다.
+      위 2항의 Google ML Kit 외에는 어떤 정보도 제3자에게 제공하거나 판매하지 않습니다.</p>
+
+      <h2>5. 보관과 삭제</h2>
+      <ul>
+        <li>앱이 저장하는 정보는 모두 기기 안에 있습니다. 앱 안에서 단어장을 지우거나, 앱 데이터를 지우거나, 앱을 삭제하면 사라집니다.</li>
+        <li>단어장 서버(littleforest.one)의 웹 서버 접속 기록(IP 주소, 시각, 요청 주소)은 서비스 운영과 장애 대응을 위해 보관되며 일정 기간 뒤 삭제됩니다.</li>
+        <li>Google ML Kit 이 수집한 정보는 Google 의 정책에 따라 처리됩니다.</li>
+      </ul>
+
+      <h2>6. 이용 대상</h2>
+      <p>SpellBoard 는 만 13세 이상 학생과 교사를 대상으로 합니다. 만 13세 미만 아동을 대상으로 하지 않으며,
+      알면서 아동의 개인정보를 수집하지 않습니다.</p>
+
+      <h2>7. 방침 변경</h2>
+      <p>이 방침이 바뀌면 이 페이지에 갱신된 내용과 시행일을 게시합니다.</p>
+
+      <h2>8. 문의</h2>
+      <p><a href="mailto:handfirst2025@gmail.com">handfirst2025@gmail.com</a></p>
+
+      <footer>SpellBoard · com.handfirst.spellboard</footer>
+    </main>
+  </body>
+</html>

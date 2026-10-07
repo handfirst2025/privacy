@@ -20,6 +20,7 @@ musoemal/index.html           무쇠말            (Google Play)
 deepblue/index.html           DEEPBLUE         (Google Play)
 pizza/index.html               Pizza Rush       (Google Play)
 kkachi/index.html             까치              (Google Play)
+spellboard/index.html         SpellBoard       (Google Play)
 ```
 
 | 앱 | 제출용 URL |
@@ -35,6 +36,7 @@ kkachi/index.html             까치              (Google Play)
 | 까치 | https://handfirst2025.github.io/privacy/kkachi/ |
 | 돌팔매 | https://handfirst2025.github.io/privacy/dolpalmae/ |
 | Golf Shot | https://handfirst2025.github.io/privacy/golf/ |
+| SpellBoard | https://handfirst2025.github.io/privacy/spellboard/ |
 
 ## 앱 추가하기
 
