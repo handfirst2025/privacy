@@ -35,6 +35,7 @@ spellboard/index.html         SpellBoard       (Google Play)
 | Pizza Rush | https://handfirst2025.github.io/privacy/pizza/ |
 | 까치 | https://handfirst2025.github.io/privacy/kkachi/ |
 | 돌팔매 | https://handfirst2025.github.io/privacy/dolpalmae/ |
+| 바위 대소동 | https://handfirst2025.github.io/privacy/rockrush/ |
 | Golf Shot | https://handfirst2025.github.io/privacy/golf/ |
 | SpellBoard | https://handfirst2025.github.io/privacy/spellboard/ |
 
