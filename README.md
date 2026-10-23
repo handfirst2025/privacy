@@ -21,6 +21,7 @@ deepblue/index.html           DEEPBLUE         (Google Play)
 pizza/index.html               Pizza Rush       (Google Play)
 kkachi/index.html             까치              (Google Play)
 spellboard/index.html         SpellBoard       (Google Play)
+stringtuner/index.html        스트링 튜너       (Google Play)
 ```
 
 | 앱 | 제출용 URL |
@@ -38,6 +39,7 @@ spellboard/index.html         SpellBoard       (Google Play)
 | 바위 대소동 | https://handfirst2025.github.io/privacy/rockrush/ |
 | Golf Shot | https://handfirst2025.github.io/privacy/golf/ |
 | SpellBoard | https://handfirst2025.github.io/privacy/spellboard/ |
+| 스트링 튜너 | https://handfirst2025.github.io/privacy/stringtuner/ |
 
 ## 앱 추가하기
 
