@@ -40,6 +40,7 @@ stringtuner/index.html        스트링 튜너       (Google Play)
 | Golf Shot | https://handfirst2025.github.io/privacy/golf/ |
 | SpellBoard | https://handfirst2025.github.io/privacy/spellboard/ |
 | 스트링 튜너 | https://handfirst2025.github.io/privacy/stringtuner/ |
+| SortPic | https://handfirst2025.github.io/privacy/sortpic/ |
 
 ## 앱 추가하기
 
