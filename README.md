@@ -13,6 +13,7 @@ handfirst 가 만든 앱·확장 프로그램의 개인정보처리방침을 한
 index.html                    허브 — 앱 목록
 recordmeet/index.html         RecordMeet       (Chrome 웹스토어)
 tigerdocu/index.html          TigerDocu        (Google Play)
+tigerdocu/en/index.html       TigerDocu 영문판 (Google Play, 해외 등록정보)
 fmm-lead-capture/index.html   FMM Lead Capture (Chrome 웹스토어)
 snowpenguin/index.html        Snow Penguin     (Google Play)
 jetjack/index.html            Jet Jack         (Google Play)
@@ -29,6 +30,7 @@ diet/index.html               식단톡            (Google Play)
 |---|---|
 | RecordMeet | https://handfirst2025.github.io/privacy/recordmeet/ |
 | TigerDocu | https://handfirst2025.github.io/privacy/tigerdocu/ |
+| TigerDocu (English) | https://handfirst2025.github.io/privacy/tigerdocu/en/ |
 | FMM Lead Capture | https://handfirst2025.github.io/privacy/fmm-lead-capture/ |
 | Snow Penguin | https://handfirst2025.github.io/privacy/snowpenguin/ |
 | Jet Jack | https://handfirst2025.github.io/privacy/jetjack/ |
