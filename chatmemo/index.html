@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>개인정보처리방침 — 챗메모</title>
+    <style>
+      :root {
+        --bg: #f4f6fd;
+        --fg: #161a2b;
+        --muted: #5d6480;
+        --line: #dde2f3;
+        --accent: #4f6bed;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #10121b;
+          --fg: #e5e8f5;
+          --muted: #9aa1bd;
+          --line: #262b40;
+          --accent: #93a6ff;
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        padding: 40px 20px 80px;
+        background: var(--bg);
+        color: var(--fg);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+        line-height: 1.75;
+        -webkit-font-smoothing: antialiased;
+      }
+      main { max-width: 720px; margin: 0 auto; }
+      h1 { font-size: 28px; letter-spacing: -0.02em; margin: 0 0 6px; }
+      .sub { color: var(--muted); font-size: 14px; margin: 0 0 36px; }
+      h2 {
+        font-size: 18px;
+        margin: 36px 0 10px;
+        padding-top: 20px;
+        border-top: 1px solid var(--line);
+      }
+      p, li { font-size: 15px; }
+      ul { padding-left: 20px; }
+      .highlight {
+        background: color-mix(in srgb, var(--accent) 12%, transparent);
+        border-left: 3px solid var(--accent);
+        padding: 14px 18px;
+        border-radius: 0 8px 8px 0;
+        margin: 20px 0;
+      }
+      .highlight p { margin: 0; font-weight: 600; }
+      footer {
+        margin-top: 48px;
+        padding-top: 20px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 13px;
+      }
+      a { color: var(--accent); }
+      .back { display: inline-block; margin-bottom: 20px; font-size: 13px; text-decoration: none; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a class="back" href="../">← 전체 목록</a>
+
+      <h1>개인정보처리방침</h1>
+      <p class="sub">챗메모 (com.handfirst.chatmemo) · 개발자 FutureSoftLab · 시행일 2026년 11월 2일</p>
+
+      <div class="highlight">
+        <p>챗메모는 대화하듯 말하면 AI 가 기억할 것을 메모로, 생일·약속을 날짜로 저장해 주는 앱입니다.
+        회원가입이 없고, 기기 고유 ID 로 사용자를 구분합니다.
+        대화·메모·날짜는 개발자 서버에 저장되며, 답을 만들기 위해 Anthropic(Claude API)으로 전송됩니다.
+        사진 백업은 기기에서 암호화된 상태로만 서버에 올라갑니다. 동영상은 기기 밖으로 나가지 않습니다.
+        화면 상단 배너 광고를 위해 Google AdMob 이 광고 식별자 등 기기 정보를 처리합니다.</p>
+      </div>
+
+      <h2>1. 수집하는 정보와 목적</h2>
+      <ul>
+        <li><strong>기기 ID</strong> — 앱이 처음 켜질 때 Android 기기 ID(앱 서명키·기기·사용자 조합마다 다른 값)를 서버로 보내
+          사용자를 구분합니다. 가입·로그인 대신 쓰는 값이며 이름이나 전화번호와 연결하지 않습니다.</li>
+        <li><strong>대화 내용</strong> — 폴더(대화방)에서 주고받은 글과 AI 의 답을 서버에 저장해 대화 화면에 보여 주고, 다음 답변의 맥락으로 씁니다.</li>
+        <li><strong>메모·날짜</strong> — 대화에서 AI 가 저장했거나 사용자가 직접 쓴 메모(제목·내용·태그)와 날짜(생일·기념일·약속·마감, 음력 여부, 알림 시점).
+          메모·날짜 화면, 검색, 알림 계산에 씁니다. 사용자가 대화에 적은 내용(연락처, 비밀번호, 물건 위치 등)이 그대로 메모가 될 수 있으며,
+          개발자가 따로 요구하는 항목은 없습니다.</li>
+        <li><strong>폴더</strong> — 폴더 이름과 이모지.</li>
+        <li><strong>사진</strong> — 사용자가 대화에 보낸 사진은 서버에서 긴 변 1,280px 로 줄여 AI 에 한 번 보여 주고, <strong>원본·축소본을 서버에 남기지 않습니다</strong>.
+          서버에는 AI 가 단 한 줄 설명·태그와 사진 크기만 남습니다.
+          사진 본체는 기기의 앱 전용 폴더(갤러리에 보이지 않음)에 저장되며, 설정에서 암호화를 켜면 AES-256-GCM 으로 암호화됩니다.</li>
+        <li><strong>사진 백업(암호문)</strong> — 기기를 바꿔도 사진을 되찾을 수 있도록, 기기가 사진을 사용자별 사진 키로 암호화한 뒤 서버에 올립니다.
+          서버는 암호문만 받습니다.</li>
+        <li><strong>사진 키·복구 코드</strong> — 사진 키(32바이트)와 기기 변경용 복구 코드는 서버의 별도 마스터 키로 다시 암호화해 보관합니다.
+          복구 코드를 새 기기에 넣으면 같은 사용자로 이어집니다.</li>
+      </ul>
+      <p>사진 키를 서버가 맡고 있으므로, 서버와 마스터 키를 함께 가진 개발자는 원리상 백업 사진을 복호화할 수 있습니다.
+      이 방식은 기기 분실·다른 앱의 접근·데이터베이스 유출로부터 사진을 보호하기 위한 것이며, 개발자는 백업 사진을 열람하지 않습니다.</p>
+      <p><strong>기기에만 있는 정보</strong> — 동영상, 잠금 패턴·PIN(PBKDF2 로 변환한 값을 기기 보안 저장소에 보관), 지문 정보(Android 가 처리하며 앱은 결과만 받음),
+      앱 설정. 이것들은 서버로 보내지 않습니다.</p>
+      <p>개발자는 이메일, 전화번호, 주소록, 정확한 위치를 요구하지도 저장하지도 않습니다.</p>
+
+      <h2>2. AI 처리 (Anthropic)</h2>
+      <p>대화 답변과 메모·날짜 저장 판단은 <strong>Anthropic, PBC</strong> 의 Claude API 가 만듭니다. 대화 한 번마다 개발자 서버가
+      보낸 글·사진, 그 폴더의 최근 대화, 최근 메모 제목, 다가오는 날짜, 검색이 필요할 때 찾은 메모를 Anthropic 으로 보냅니다
+      (앱이 직접 보내지 않으며 기기 ID 는 보내지 않습니다).
+      Anthropic 은 개발자의 요청을 처리하는 수탁자로서 이 데이터를 받으며, API 로 받은 데이터를 모델 학습에 쓰지 않고
+      자체 정책에 따라 보관 후 삭제합니다 —
+      <a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Anthropic 개인정보처리방침</a>.
+      Anthropic 서버는 미국 등 국외에 있으므로 위 정보는 국외로 전송됩니다.</p>
+
+      <h2>3. 광고 (Google AdMob)</h2>
+      <p>이 앱은 화면 상단에 <strong>Google AdMob</strong> 배너 광고를 표시합니다. 광고를 게재하기 위해 AdMob 이 다음 정보를 처리할 수 있습니다.</p>
+      <ul>
+        <li>광고 식별자(Advertising ID) 등 기기 식별자</li>
+        <li>기기 정보(기종, 운영체제 버전 등)와 대략적인 위치(IP 주소 기반)</li>
+        <li>광고 노출·클릭 기록</li>
+        <li>광고 SDK 의 비정상 종료 로그 및 진단 정보</li>
+      </ul>
+      <p>이 정보는 개발자가 아니라 Google 이 직접 수집·처리하며, 개발자 서버로 오지 않습니다. 대화·메모·날짜·사진은 AdMob 에 제공하지 않습니다.
+      Google 의 데이터 처리 방식은 <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google 의 파트너 사이트 정책</a>에서
+      확인할 수 있으며, Google 서버가 국외에 있으므로 국외로 전송될 수 있습니다.
+      유럽경제지역(EEA)·영국·스위스에서는 광고를 불러오기 전에 Google 의 동의 화면이 먼저 뜨고, 거부하면 비맞춤 광고만 표시됩니다.
+      맞춤 광고를 원하지 않으시면 기기 설정에서 끌 수 있습니다.<br />
+      <em>설정 → Google → 광고 → 광고 ID 삭제</em> (기기에 따라 "광고 개인 최적화 선택 해제")</p>
+      <p>앱에 인앱 결제는 없습니다.</p>
+
+      <h2>4. 요청하는 권한</h2>
+      <ul>
+        <li><code>INTERNET</code> · <code>ACCESS_NETWORK_STATE</code> — 서버와 대화하고 광고를 불러올 때 씁니다.</li>
+        <li><code>POST_NOTIFICATIONS</code> · <code>RECEIVE_BOOT_COMPLETED</code> · <code>WAKE_LOCK</code> — 생일·약속 알림을 띄우고, 기기를 다시 켠 뒤에도 알림을 다시 걸 때 씁니다.
+          알림은 기기 안에서 예약되며 서버가 푸시를 보내지 않습니다.</li>
+        <li><code>USE_BIOMETRIC</code> · <code>USE_FINGERPRINT</code> — 잠금을 지문으로 풀 때만 씁니다. 지문 자체는 앱이 받지 않습니다.</li>
+        <li><code>com.google.android.gms.permission.AD_ID</code> 및 광고 관련 권한(<code>ACCESS_ADSERVICES_*</code>) — 광고 게재를 위해 AdMob 이 사용합니다.</li>
+      </ul>
+      <p>사진·동영상은 Android 의 사진 선택기, 파일 선택기, 기본 카메라 앱을 통해 사용자가 고른 것만 받습니다. 앨범 전체 접근, 위치, 연락처, 마이크 권한은 사용하지 않습니다.</p>
+
+      <h2>5. 제3자 제공</h2>
+      <p>개발자가 사용자 정보를 판매하거나 마케팅 목적으로 제3자에게 제공하는 일은 없습니다.
+      AI 처리를 위해 Anthropic 에(2항), 광고 게재를 위해 Google AdMob 이(3항) 위 정보를 처리합니다. 분석 도구, 소셜 로그인, 결제 모듈은 넣지 않았습니다.</p>
+
+      <h2>6. 보관 기간</h2>
+      <p>대화·메모·날짜·사진 설명·사진 백업(암호문)·사진 키는 사용자가 앱을 쓰는 동안 서버(대한민국 AWS 서울 리전)에 보관하며, 삭제를 요청하면 지웁니다.
+      메모·날짜·사진은 앱에서 하나씩 지울 수 있고, 폴더를 지우면 그 폴더의 대화·메모·날짜·사진 기록과 백업이 함께 지워집니다.
+      앱을 지워도 서버의 기록은 남으며, 같은 기기에 다시 설치하거나 새 기기에 복구 코드를 넣으면 이어집니다.</p>
+
+      <h2 id="delete">7. 데이터 삭제 요청</h2>
+      <p>챗메모(개발자 FutureSoftLab)에 저장된 내 정보를 전부 지우려면:</p>
+      <ul>
+        <li>앱의 <strong>설정 › 기기 변경 › 내 복구 코드 보기</strong>에서 복구 코드 <strong>앞 4자리</strong>와 사용 시작 날짜를 적어</li>
+        <li><a href="mailto:handfirst2025@gmail.com?subject=%EC%B1%97%EB%A9%94%EB%AA%A8%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%82%AD%EC%A0%9C%20%EC%9A%94%EC%B2%AD">handfirst2025@gmail.com</a> 으로 "챗메모 데이터 삭제 요청" 메일을 보내 주세요.</li>
+      </ul>
+      <p>확인 후 30일 이내에 <strong>대화 내용, 메모, 날짜, 폴더, 사진 설명, 사진 백업, 사진 키와 복구 코드, 기기 ID 를 모두 삭제</strong>하고 회신합니다.
+      삭제 후 따로 보관하는 정보는 없습니다. 기기에 있는 사진·동영상은 앱을 지우면 함께 지워집니다.
+      Anthropic·Google 이 처리한 정보는 각 회사의 정책에 따라 보관·삭제됩니다.</p>
+
+      <h2>8. 이용 대상</h2>
+      <p>일상 기록을 남기고 싶은 성인을 위한 앱입니다. 만 13세 미만 아동을 대상으로 하지 않습니다.</p>
+
+      <h2>9. 방침 변경</h2>
+      <p>이 방침이 바뀌면 이 페이지에 갱신된 내용과 시행일을 게시합니다.</p>
+
+      <h2>10. 문의</h2>
+      <p><a href="mailto:handfirst2025@gmail.com">handfirst2025@gmail.com</a></p>
+
+      <footer>챗메모 · com.handfirst.chatmemo</footer>
+    </main>
+  </body>
+</html>

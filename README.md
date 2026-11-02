@@ -24,6 +24,7 @@ kkachi/index.html             까치              (Google Play)
 spellboard/index.html         SpellBoard       (Google Play)
 stringtuner/index.html        스트링 튜너       (Google Play)
 diet/index.html               식단톡            (Google Play)
+chatmemo/index.html           챗메모            (Google Play)
 ```
 
 | 앱 | 제출용 URL |
@@ -45,6 +46,7 @@ diet/index.html               식단톡            (Google Play)
 | 스트링 튜너 | https://handfirst2025.github.io/privacy/stringtuner/ |
 | SortPic | https://handfirst2025.github.io/privacy/sortpic/ |
 | 식단톡 | https://handfirst2025.github.io/privacy/diet/ |
+| 챗메모 | https://handfirst2025.github.io/privacy/chatmemo/ |
 
 ## 앱 추가하기
 
