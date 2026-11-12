@@ -25,6 +25,7 @@ spellboard/index.html         SpellBoard       (Google Play)
 stringtuner/index.html        스트링 튜너       (Google Play)
 diet/index.html               식단톡            (Google Play)
 chatmemo/index.html           챗메모            (Google Play)
+vocabee/index.html            Vocabee          (Google Play)
 ```
 
 | 앱 | 제출용 URL |
@@ -47,6 +48,7 @@ chatmemo/index.html           챗메모            (Google Play)
 | SortPic | https://handfirst2025.github.io/privacy/sortpic/ |
 | 식단톡 | https://handfirst2025.github.io/privacy/diet/ |
 | 챗메모 | https://handfirst2025.github.io/privacy/chatmemo/ |
+| Vocabee | https://handfirst2025.github.io/privacy/vocabee/ |
 
 ## 앱 추가하기
 
